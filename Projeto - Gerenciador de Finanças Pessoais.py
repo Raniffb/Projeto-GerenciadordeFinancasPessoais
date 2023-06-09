@@ -84,3 +84,12 @@ def main():
             saldo = calcular_saldo(transacoes)
             print("Saldo atual: R$ {:.2f}".format(saldo))
         elif opcao == 3:
+            gerar_relatorio_gastos(transacoes)
+        elif opcao == 4:
+            salvar_transacoes(transacoes)
+            print("Transações salvas. Encerrando programa.")
+            break
+        else:
+            print("Opção inválida. Digite um número válido.")
+if __name__ == "__main__":
+    main()
